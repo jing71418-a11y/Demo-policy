@@ -88,9 +88,9 @@ a{color:#246bff;text-decoration:none;word-break:break-all;}
 
 <div class="item">
 <p><strong>位置信息权限（含精确/粗略位置、基站信息）</strong></p>
-<p><strong>详细范围：</strong>包括精确位置、粗略位置、基站信息，支持在 App 前台、后台及静默状态下获取，且包含通过工具能力读取用户行动轨迹的权限。</p>
-<p><strong>收集目的：</strong>用于基于位置推荐服务、性能优化、反作弊、地域分布校正及安全风控。</p>
-<p><strong>数据处理方式：</strong>位置相关数据仅用于 App 自身功能实现，不会与第三方共享。</p>
+<p><strong>详细范围：</strong>包括精确位置、粗略位置、基站信息。仅在您主动点击定位按钮、查看当前位置、进行路线规划或发起导航等前台功能场景下，在获得您的授权同意后获取。</p>
+<p><strong>收集目的：</strong>用于地图定位、天气展示、路线规划、导航引导及相关功能实现。</p>
+<p><strong>数据处理方式：</strong>我们不会在后台或静默状态下主动开启定位，也不会持续追踪您的行动轨迹；位置相关数据仅用于您当前主动触发的功能场景。</p>
 </div>
 
 <div class="item">
@@ -276,9 +276,9 @@ a{color:#246bff;text-decoration:none;word-break:break-all;}
 
 <p class="item"><strong>9、SDK名称：</strong>地图SDK</p>
 <p>开发者：北京高德图强科技有限公司</p>
-<p><strong>使用目的：</strong>为了向用户提供定位服务</p>
+<p><strong>使用目的：</strong>用于地图展示，以及在您主动点击定位按钮、查看当前位置、进行路线规划或发起导航时提供定位服务</p>
 <p><strong>收集个人信息：</strong>位置信息（经纬度、精确位置、粗略位置）【通过 IP 地址、GNSS 信息、WiFi 状态、WiFi 参数、WiFi 列表、SSID、BSSID、GAID、基站信息、信号强度、蓝牙信息、传感器信息（矢量、加速度、压力）、设备信号强度信息、外部存储目录获取】、设备标识信息（IMEI、IDFA、IDFV、Android ID、MEID、MAC 地址、OAID、IMSI、硬件序列号）、当前应用信息（应用名、应用版本号）、设备参数及系统信息（系统属性、设备型号、操作系统、运营商信息）。</p>
-<p><strong>收集频率说明：</strong>一般冷启动时，可能以 10 秒一次的频次收集位置信息，用于实现地图轨迹绘制等功能。并遵循必要性、透明度、用户控制权和数据保护原则。</p>
+<p><strong>收集频率说明：</strong>仅在您主动使用上述定位相关功能且应用处于前台时，按当次服务需要获取位置信息；不会在冷启动、后台或静默状态下以固定频次持续收集。</p>
 <p><strong>隐私链接：</strong><a href="https://lbs.amap.com/pages/privacy/">https://lbs.amap.com/pages/privacy/</a></p>
 
 <p class="item"><strong>10、SDK名称：</strong>百度移动广告SDK</p>
@@ -304,8 +304,8 @@ a{color:#246bff;text-decoration:none;word-break:break-all;}
 <p class="item"><strong>13、SDK名称：</strong>导航SDK</p>
 <p><strong>开发者：</strong>北京高德图强科技有限公司</p>
 <p><strong>收集个人信息类型：</strong>IDFA、OAID、应用名、应用版本号、设备品牌及型号、操作系统、运营商信息、屏幕分辨率，IMEI、IMSI、设备 MAC 地址、Android ID、OAID、MEID、ICCID、SN、SUCI、SUPI、软件安装列表、位置、联系人、通话记录、日历、短信、本机电话号码、图片、音视频等。</p>
-<p><strong>使用目的：</strong>追踪、排查、诊断、统计服务中的各类问题，协助提升网络定位精度、地图展示、判断网络状态，以及进行辅助定位。</p>
-<p><strong>收集频率说明：</strong>一般冷启动时，可能以 10 秒一次的频次收集位置信息，用于实现地图轨迹绘制等功能。并遵循必要性、透明度、用户控制权和数据保护原则。</p>
+<p><strong>使用目的：</strong>在您主动发起路线规划或导航时，提供路线规划、导航引导、网络状态判断及定位辅助服务。</p>
+<p><strong>收集频率说明：</strong>仅在您主动使用导航相关功能且应用处于前台时，按当次服务需要获取相关位置信息；不会在冷启动、后台或静默状态下以固定频次持续收集。</p>
 <p><strong>隐私链接：</strong><a href="https://lbs.amap.com/pages/privacy/">https://lbs.amap.com/pages/privacy/</a></p>
 
 <p class="item"><strong>14、SDK名称：</strong>短剧SDK</p>
@@ -358,15 +358,16 @@ a{color:#246bff;text-decoration:none;word-break:break-all;}
 
 <p class="item">22、轻量版地图SDK</p>
 <p><strong>开发者：</strong>北京高德图强科技有限公司</p>
-<p><strong>使用目的：</strong>为了向用户提供定位服务</p>
+<p><strong>使用目的：</strong>用于地图展示，以及在您主动点击定位按钮、查看当前位置、进行路线规划或发起导航时提供定位服务</p>
 <p><strong>收集个人信息：</strong>位置信息（经纬度、精确位置、粗略位置）【通过 IP 地址、GNSS 信息、WiFi 状态、WiFi 参数、WiFi 列表、SSID、BSSID、GAID、基站信息、信号强度、蓝牙信息、传感器信息（矢量、加速度、压力）、设备信号强度信息、外部存储目录获取】、设备标识信息（IMEI、IDFA、IDFV、Android ID、MEID、MAC 地址、OAID、IMSI、硬件序列号）、当前应用信息（应用名、应用版本号）、设备参数及系统信息（系统属性、设备型号、操作系统、运营商信息）。</p>
-<p><strong>收集频率说明：</strong>一般冷启动时，可能以 10 秒一次的频次收集位置信息，用于实现地图轨迹绘制等功能。并遵循必要性、透明度、用户控制权和数据保护原则。</p>
+<p><strong>收集频率说明：</strong>仅在您主动使用上述定位相关功能且应用处于前台时，按当次服务需要获取位置信息；不会在冷启动、后台或静默状态下以固定频次持续收集。</p>
 <p><strong>隐私链接：</strong><a href="https://lbs.amap.com/pages/privacy/">https://lbs.amap.com/pages/privacy/</a></p>
 
 <p class="item"><strong>23、SDK名称：</strong>定位SDK</p>
 <p><strong>开发者：</strong>北京高德图强科技有限公司</p>
-<p><strong>使用目的：</strong>提供用户位置服务，从而获取用户所在位置的天气服务</p>
+<p><strong>使用目的：</strong>仅在您主动点击定位按钮并授权后，提供当前位置与天气服务</p>
 <p><strong>收集个人信息：</strong>位置信息（经纬度、精确位置、粗略位置）【通过 IP 地址、GNSS 信息、WiFi 状态、WiFi 参数、WiFi 列表、SSID、BSSID、基站信息、信号强度、蓝牙信息、传感器信息（矢量、加速度、压力）、设备信号强度信息、外部存储目录获取】、设备标识信息（IMEI、IDFA、IDFV、Android ID、MEID、MAC 地址、OAID、IMSI、硬件序列号）、当前应用信息（应用名、应用版本号）、设备参数及系统信息（系统属性、设备型号、操作系统、运营商信息）。</p>
+<p><strong>收集频率说明：</strong>仅在您主动触发定位且应用处于前台时进行单次定位，不会在后台或静默状态下持续采集。</p>
 <p><strong>SDK隐私链接：</strong><a href="https://lbs.amap.com/pages/privacy/">https://lbs.amap.com/pages/privacy/</a></p>
 
 <p class="item">24、岳鹰SDK（Crash SDK）</p>
